@@ -1,5 +1,5 @@
 # Sobel-edge-detection-and-inference-based-Image-Compositing-using-Vitis-HLS-for-Pynq-Z2-FPGA
-![Pipeline Flow](RCD_pipeline)
+![Pipeline Flow](rcd_pipeline)
 Sobel edge Detection was done for image edge Detection. Based on the edge density of the entire frame, a small 128 x 128 image is composited on the top right corner of the frame. The incoming pixel is first converted to gray scale, and the gray scale image is blurred using a 7x7 Gaussian Blur kernel with a standard deviation ($\sigma$) of 3. 
 The 7x7 window slides horizontally and vertically. Row buffers are created for this purpose, to make the design algorithm efficient, circular buffering is used, instead of shifting row-wise in memory. 
 
