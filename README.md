@@ -11,8 +11,7 @@ Applications include detecting brain tumours, road-lane monitoring, etc.
 
 The image data is in compositing.hpp file. 
 
-The project is done for a Xilinix PYNQ-Z2 board, and the selected part is \textbf{xc7z020clg400-1}. The design.bd file is [AXI Video DMA (AXI VDMA)](https://www.fpgadeveloper.com/2014/08/using-the-axi-dma-in-vivado.html/). In the video stream, and in between the hdmi\_in and the axi\_vdma blocks, the Sobel IP must be put. An extra AXI master pin must be added and connected to Interconnect IP inside the video stream IP of the VDMA. The IP has to be connected to the 142 MHz clock and the corresponding reset signals present in the design. 
-
-Port type s_axilite was used. 
+The project is done for a Xilinix PYNQ-Z2 board, and the selected part is \textbf{xc7z020clg400-1}. The design.bd file is [AXI Video DMA (AXI VDMA)](https://www.fpgadeveloper.com/2014/08/using-the-axi-dma-in-vivado.html/). In the video stream, and in between the hdmi\_in and the axi\_vdma blocks, the Sobel IP must be put. An extra AXI master pin must be added and connected to Interconnect IP inside the video stream IP of the VDMA. The IP has to be connected to the 142 MHz clock and the corresponding reset signals present in the design. Port type s_axilite was used. 
+![Image of the Custom IP](image.png)
 
 For the users ease, a synthesized base.bit (bitstream) and base.hwh (hardware handover) files have been provided as well as the .ipynb file to run the video on xilinx pynq's provided [Jupyter productivity platform](https://pynq.readthedocs.io/en/v2.6.1/getting_started.html)
