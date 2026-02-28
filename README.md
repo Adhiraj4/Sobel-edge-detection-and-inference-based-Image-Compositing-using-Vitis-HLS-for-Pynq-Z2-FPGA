@@ -8,3 +8,9 @@ Finally, after a whole frame has passed, the total edge density of the pixel ima
 
 To convert the images into pixel data, a Python (.py) program is provided; one can use it as they like in order to get their own custom image. 
 Applications include detecting brain tumours, road-lane monitoring, etc. 
+
+The image data is in compositing.hpp file. 
+
+The project is done for a Xilinix PYNQ-Z2 board, and the selected part is \textbf{xc7z020clg400-1}. The design.bd file is \textcolor{blue}{[\href{https://youtu.be/EISZSIsrKi0](https://www.fpgadeveloper.com/2014/08/using-the-axi-dma-in-vivado.html/)}{AXI Video DMA (AXI VDMA)}}. In the video stream, and in between the hdmi\_in and the axi\_vdma blocks, the Sobel IP must be put. An extra AXI master pin must be added and connected to Interconnect IP inside the video stream IP of the VDMA. The IP has to be connected to the 142 MHz clock and the corresponding reset signals present in the design. 
+
+Port type s_axilite was used. 
