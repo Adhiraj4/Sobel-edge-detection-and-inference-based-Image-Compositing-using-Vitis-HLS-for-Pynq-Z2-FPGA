@@ -15,4 +15,4 @@ The project is done for a Xilinix PYNQ-Z2 board, and the selected part is \textb
 
 Port type s_axilite was used. 
 
-For the users ease, a synthesized base.bit (bitstream) and base.hwh (hardware handover) files have been provided as well as the .ipynb file to run the video on xilinx pynq's provided [Jupyter productivity platform] (https://pynq.readthedocs.io/en/v2.6.1/getting_started.html)
+For the users ease, a synthesized base.bit (bitstream) and base.hwh (hardware handover) files have been provided as well as the .ipynb file to run the video on xilinx pynq's provided [Jupyter productivity platform](https://pynq.readthedocs.io/en/v2.6.1/getting_started.html)
